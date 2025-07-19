@@ -13,12 +13,12 @@ B. Run uvicorn:
     1. cd backend;
     2. uvicorn main:app --host localhost --port 8080
 
-C. Run ReactJs with vite on port 5173(default):
+C. Run Ollama: ollama serve, ollama run bambucha/saiga-llama3
+
+D. Run ReactJs with vite on port 5173(default):
 (Visit [link](https://www.geeksforgeeks.org/reactjs/how-to-setup-reactjs-with-vite/) for details)
     1. cd frontend;
     2. npm run dev
-
-
 
 Diagrams:
 ![System architecture](images/Архитектура%20системы.png)

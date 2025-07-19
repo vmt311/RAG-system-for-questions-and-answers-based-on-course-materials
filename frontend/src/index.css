@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  } 
+  40% {
+    transform: scale(1);
+  }
+}
+
+.animate-bounce {
+  display: inline-block;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.delay-0 {
+  animation-delay: 0s;
+}
+.delay-150 {
+  animation-delay: 0.15s;
+}
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spin {
+  animation: spin 1s linear infinite;
+}
+.spinner {
+  border-top: 4px solid transparent;  /* Phần không có màu */
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-top-color: #bdc2c9;  /* Màu cho phần trên */
+  border-right-color: #bdc2c9;
+  border-radius: 50%;
+  width: 2rem;  /* Kích thước */
+  height: 2rem; /* Kích thước */
+  animation: spin 1s linear infinite; /* Áp dụng animation quay */
+}
